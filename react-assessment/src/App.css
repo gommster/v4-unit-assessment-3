@@ -1,0 +1,93 @@
+body{
+  background-color: rgb(245,245,245);
+  font-weight: 600;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App .Header{
+  box-shadow: 0 20px 20px rgb(229,229,229);
+  color: rgb(2,139,139);
+  padding: 20px;
+  height: 100%;
+  width: 100%; 
+  margin: 0 0 20px 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.SearchBar {
+  align-self: center;
+  display: flex;
+  width: 600px;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+.App .BookList{
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+}
+
+.Shelf{
+  width: 25vw;
+  line-height: 30px;
+  border-left: solid black 2px;
+}
+
+.Shelf h1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.App .BookList .bookCard{
+  width: 150px;
+  margin: 40px;
+}
+
+.App .bookDisplay{
+  display: flex;
+}
+
+.App .BookList .bookCard img{
+  width: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
